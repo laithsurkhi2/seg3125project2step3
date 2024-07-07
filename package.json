@@ -1,7 +1,9 @@
 {
+  "homepage": "https://laithsurkhi2.github.io/seg3125project2step3",
   "name": "segproject2",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -21,7 +23,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +47,7 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.4",
-    "@babel/plugin-proposal-private-property-in-object"
+    "gh-pages": "^6.1.1",
+    "tailwindcss": "^3.4.4"
   }
 }

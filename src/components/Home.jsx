@@ -3,23 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import aboutus from '../assets/img/aboutus.webp';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
-const testimonials = [
-  {
-    name: 'John Doe',
-    text: 'HealthHub provided excellent care and I felt truly supported throughout my treatment. The team was professional and compassionate.',
-    location: 'Ottawa, ON',
-  },
-  {
-    name: 'Jane Smith',
-    text: 'I had a great experience at HealthHub. The staff is friendly and the facilities are top-notch. Highly recommended!',
-    location: 'Ottawa, ON',
-  },
-  {
-    name: 'Michael Johnson',
-    text: 'The doctors at HealthHub are knowledgeable and attentive. I felt heard and well taken care of. Thank you for the great service!',
-    location: 'Ottawa, ON',
-  },
-];
 
 const Home = () => {
   const navigate = useNavigate();
@@ -34,7 +17,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 text-black bg-[url('assets/img/home.webp')] bg-no-repeat bg-cover opacity-90">
+      <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 text-black bg-[url('assets/img/home.jpg')] bg-no-repeat bg-cover opacity-90">
         <div className="w-full lg:w-4/5 space-y-5 mt-10">
           <h1 className="text-5xl font-bold leading-tight">
             Make the right choice for your health!
